@@ -5,7 +5,7 @@ import { registerUser } from "../../services/auth";
 import styles from "./Signup.module.css";
 import { Bounce, toast } from "react-toastify";
 
-interface SignupFormData {
+interface SignupFormData extends Record<string, string> {
   username: string;
   email: string;
   password: string;
