@@ -110,6 +110,19 @@ const Login = () => {
             >
               Iniciar sesión
             </Button>
+            
+            <Text>
+              ¿No tienes una cuenta?{" "}
+              <Text
+                as="span"
+                color="blue.400"
+                cursor="pointer"
+                _hover={{ textDecoration: "underline" }}
+                onClick={() => navigate("/signup")}
+              >
+                Regístrate aquí
+              </Text>
+            </Text>
           </VStack>
         </form>
       </Box>
